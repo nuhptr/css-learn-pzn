@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Display</title>
+
+        <style>
+            /* display: inline-block
+             * - Elements can appear in the same line
+             * - Can have width and height
+             * - Respects padding and margin
+             * - Common use: navigation items, cards in a row
+             */
+            .content {
+                display: inline-block;
+                background-color: aqua;
+                width: 200px;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            /* display: block
+             * - Takes full width of parent container
+             * - Always starts on a new line
+             * - Can have width and height
+             * - Common use: paragraphs, divs, headers
+             */
+            .block {
+                display: block;
+                background-color: pink;
+                width: 200px;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            /* display: inline
+             * - Flows with text content
+             * - Cannot have width and height
+             * - Only horizontal margin/padding are respected
+             * - Common use: links, spans, text highlights
+             */
+            .inline {
+                display: inline;
+                background-color: lightgreen;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            /* display: none
+             * - Completely removes element from layout
+             * - Element not visible and not taking space
+             * - Common use: toggleable content, responsive design
+             */
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Display: inline-block</h2>
+        <div class="content">
+            <h1>Ini Konten 1</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium voluptatum, saepe, illum
+                itaque blanditiis magnam quam ullam ratione laboriosam quidem quasi perferendis excepturi corrupti
+                libero magni vitae eveniet eligendi.
+            </p>
+        </div>
+
+        <div class="content">
+            <h1>Ini Konten 2</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium voluptatum, saepe, illum
+                itaque blanditiis magnam quam ullam ratione laboriosam quidem quasi perferendis excepturi corrupti
+                libero magni vitae eveniet eligendi.
+            </p>
+        </div>
+
+        <h2>Display: block</h2>
+        <div class="block">Block element 1</div>
+        <div class="block">Block element 2</div>
+
+        <h2>Display: inline</h2>
+        <span class="inline">Inline element 1</span>
+        <span class="inline">Inline element 2</span>
+
+        <h2>Display: none</h2>
+        <div class="hidden">This content is hidden</div>
+    </body>
+</html>

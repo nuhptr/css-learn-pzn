@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex Basis</title>
+
+        <style>
+            /* Container with flex display to enable flexbox layout */
+            .container {
+                display: flex;
+            }
+            /* Common styles for all flex items */
+            .content {
+                background-color: aqua;
+                border: 1px solid blue;
+                padding: 5px;
+                margin: 5px;
+            }
+            /* Sets initial main size of the first flex item to 300px */
+            /* flex-shrink: 0 prevents this item from shrinking when container width is reduced */
+            /* By default, flex items have flex-shrink: 1, allowing them to shrink if needed */
+            .content1 {
+                flex-basis: 300px;
+                flex-shrink: 0;
+            }
+            /* Sets initial main size of the second flex item to 200px */
+            .content2 {
+                flex-basis: 200px;
+            }
+            /* Sets initial main size of the third flex item to 100px */
+            .content3 {
+                flex-basis: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content content1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex magnam molestias ducimus
+                temporibus, vel corrupti nesciunt blanditiis neque libero debitis maxime officiis repudiandae
+                voluptates? Earum quaerat iure illum esse?
+            </div>
+            <div class="content content2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex magnam molestias ducimus
+                temporibus, vel corrupti nesciunt blanditiis neque libero debitis maxime officiis repudiandae
+                voluptates? Earum quaerat iure illum esse?
+            </div>
+            <div class="content content3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex magnam molestias ducimus
+                temporibus, vel corrupti nesciunt blanditiis neque libero debitis maxime officiis repudiandae
+                voluptates? Earum quaerat iure illum esse?
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox Align Items</title>
+
+        <style>
+            /* align-items: center vertically centers items along the cross-axis */
+            .container {
+                display: flex;
+                height: auto;
+                background-color: yellow;
+                /* Try these different values for align-items:
+                - flex-start: Items align at start of cross-axis
+                - flex-end: Items align at end of cross-axis
+                - center: Items center along cross-axis
+                - stretch: Items stretch to fill container
+                - baseline: Items align by their text baseline
+                */
+                align-items: center;
+                justify-content: center;
+            }
+            /* Create containers to demonstrate different align-items */
+            .container-start {
+                display: flex;
+                height: 200px;
+                background-color: #ffeb3b;
+                align-items: flex-start;
+                margin-bottom: 10px;
+            }
+            .container-end {
+                display: flex;
+                align-items: flex-end;
+                height: 200px;
+                background-color: #ffc107;
+                margin-bottom: 10px;
+            }
+            .content {
+                background-color: aqua;
+                border: 2px solid blue;
+                padding: 10px;
+                margin: 10px;
+                width: 200px;
+                height: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-start">
+            <div class="content">
+                <h1>Align Start</h1>
+                <p>Items aligned to the start of the cross-axis</p>
+            </div>
+        </div>
+        <div class="container-end">
+            <div class="content">
+                <h1>Align End</h1>
+                <p>Items aligned to the end of the cross-axis</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h1>Content 1</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 2</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 3</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

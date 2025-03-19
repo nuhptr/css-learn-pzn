@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox Align Items</title>
+
+        <style>
+            .container {
+                display: flex;
+                /* TODO: flex-wrap determines if items should wrap onto multiple lines:
+                - wrap: items will wrap onto multiple lines when they don't fit
+                - nowrap (default): items will stay on a single line
+                - wrap-reverse: items will wrap onto multiple lines in reverse order */
+                flex-wrap: wrap;
+                /* Make item in center of page */
+                align-content: center;
+                justify-content: center;
+                height: 100vh;
+                background-color: yellow;
+            }
+
+            .content {
+                background-color: aqua;
+                border: 2px solid blue;
+                padding: 10px;
+                margin: 10px;
+                width: 200px;
+                height: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content">
+                <h1>Content 1</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 2</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 3</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 4</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 5</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
