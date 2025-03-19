@@ -6,42 +6,57 @@
         <title>Box Model</title>
 
         <style>
+            /* Reset default body spacing */
             body {
                 padding: 0px;
                 margin: 0px;
             }
+
+            /* Base styles for all div elements */
             div {
                 padding: 0px;
                 margin: 0px;
                 background-color: pink;
             }
+
+            /* Text formatting for paragraphs */
             p {
                 padding: 0px;
                 margin: 0px;
                 text-align: justify;
             }
+
+            /* First article box with fixed dimensions and borders */
             .artikel1 {
                 height: 200px;
                 width: 200px;
                 background-color: aqua;
+                /* Padding: top right bottom left */
                 padding: 10px 20px 10px 20px;
+                /* Margin: top right bottom left */
                 margin: 10px 10px 10px 10px;
+                /* Box border properties */
                 border-style: solid;
                 border-width: 2px;
+                /* Border radius: top-left top-right bottom-right bottom-left */
                 border-radius: 20px 0px 20px 0px;
 
-                /* Indicator when the content is overflowing */
+                /* Add scrollbar when content exceeds box dimensions */
                 overflow: auto;
             }
+
+            /* Second article box with different dimensions and side borders */
             .artikel2 {
                 height: 150px;
                 width: 300px;
                 padding: 20px;
                 margin: 10px 10px 10px 10px;
+                /* Only add borders to left and right sides */
                 border-left-style: solid;
                 border-left-width: 2px;
                 border-right-style: solid;
                 border-right-width: 2px;
+                /* Same border radius as artikel1 for consistency */
                 border-radius: 20px 0px 20px 0px;
             }
         </style>

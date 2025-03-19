@@ -7,18 +7,17 @@
         <link rel="stylesheet" href="/basics/css/hello.css" />
 
         <style>
+            /* This rule takes precedence (prioritas) due to !important */
             h1 {
                 color: black !important;
             }
 
+            /* This rule is overridden by the !important rule above */
             h1 {
                 color: green;
             }
 
-            h1 {
-                color: yellow;
-            }
-
+            /* Simple background color for the body */
             body {
                 background-color: grey;
             }

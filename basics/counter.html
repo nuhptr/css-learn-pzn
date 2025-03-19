@@ -5,24 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <style>
+            /* Initialize counters for both heading levels starting from 0 */
             body {
                 counter-set: judul 0;
                 counter-set: subjudul 0;
             }
 
+            /* Increment main heading counter and reset subheading counter */
             h1 {
                 counter-increment: judul 1;
                 counter-reset: subjudul;
             }
 
+            /* Increment subheading counter */
             h2 {
                 counter-increment: subjudul 1;
             }
 
+            /* Display main heading number (e.g., "1. ") */
             h1::before {
                 content: counter(judul) ". ";
             }
 
+            /* Display combined heading numbers (e.g., "1.1. ") */
             h2::before {
                 content: counter(judul) "." counter(subjudul) ". ";
             }

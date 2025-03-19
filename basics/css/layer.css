@@ -1,9 +1,11 @@
+/* TODO: Layer 'a' has lower priority as defined in the HTML file */
 @layer a {
     h1 {
         color: red;
     }
 }
 
+/* TODO: Layer 'b' has higher priority and will override layer 'a' styles */
 @layer b {
     h1 {
         color: pink;

@@ -6,7 +6,12 @@
         <title>Combinator</title>
 
         <style>
-            /* ~ means sibling */
+            /*  General sibling combinator (~) selects all <p> elements that are siblings of and
+                follow a <div> element */
+            /*  This will only affect <p> elements that:
+                1. Share the same parent as the <div>
+                2. Come after the <div> in the document order
+            */
             div ~ p {
                 color: red;
             }

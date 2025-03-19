@@ -6,11 +6,26 @@
         <title>Layer</title>
 
         <style>
-            @layer b, a; /* layer a akan di terapkan pertama kali, lalu layer b */
+            /* Layer order declaration - this determines the cascade order:
+            - Later layers override earlier ones
+            - In this case, 'b' will override 'a' */
+            @layer b, a;
+
+            /* Import external CSS file containing layer 'a' and 'b' definitions */
             @import url(layer.css);
 
+            /* Styles outside of any layer have the highest priority
+            This will override any layer-based styles */
             h2 {
                 color: blue;
+            }
+
+            /* Layer 'c' is independent and doesn't affect color
+            since it only contains font-size property */
+            @layer c {
+                h1 {
+                    font-size: 24px;
+                }
             }
         </style>
     </head>
@@ -18,5 +33,6 @@
     <body>
         <h1>Ini Judul</h1>
         <h2>Ini Sub Judul</h2>
+        <p>Layer precedence: b > a (as declared at top)</p>
     </body>
 </html>

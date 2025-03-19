@@ -6,43 +6,48 @@
         <title>Box Model</title>
 
         <style>
+            /* Reset default body spacing */
             body {
                 padding: 0px;
                 margin: 0px;
             }
+
+            /* Base styles for all div elements */
             div {
                 padding: 0px;
                 margin: 0px;
                 background-color: pink;
             }
+
+            /* Text alignment for paragraphs */
             p {
                 padding: 0px;
                 margin: 0px;
                 text-align: justify;
             }
+
+            /* First article with outline and rounded corners */
             .artikel1 {
                 height: 200px;
                 background-color: aqua;
                 width: 200px;
-                padding: 10px 20px 10px 20px;
+                padding: 10px 20px 10px 20px; /* top right bottom left */
                 margin: 10px 10px 10px 10px;
-                /* border-style: solid;
-            border-width: 10px; */
 
-                /* Outline of box */
+                /* Red outline with rounded corners */
                 outline-style: solid;
                 outline-width: 5px;
                 border-radius: 25px;
                 outline-color: red;
             }
 
+            /* Second article with border on sides and asymmetric rounded corners */
             .artikel2 {
                 height: 150px;
                 width: 300px;
                 padding: 20px;
                 margin: 10px 10px 10px 10px;
 
-                /* using border style */
                 border-left-style: solid;
                 border-left-width: 2px;
                 border-right-style: solid;
