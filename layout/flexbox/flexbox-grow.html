@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex Grow</title>
+
+        <style>
+            /* Container that holds flex items */
+            .container {
+                display: flex; /* Enable flexbox layout */
+                flex-direction: row; /* Arrange items horizontally (default) */
+            }
+
+            /* Styling for each flex item */
+            .content {
+                background-color: aqua; /* Light blue background */
+                border: 1px solid blue; /* Blue border around items */
+                padding: 5px; /* Inner spacing */
+                margin: 5px; /* Outer spacing between items */
+            }
+
+            /* Small items take up 1 unit of available space */
+            .small {
+                flex-grow: 1; /* Grows at 1x rate */
+            }
+
+            /* Large items take up 2 units of available space */
+            .large {
+                flex-grow: 2; /* Grows at 2x rate */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content small">A</div>
+            <div class="content large">B</div>
+            <div class="content small">C</div>
+            <div class="content large">D</div>
+            <div class="content small">E</div>
+        </div>
+    </body>
+</html>

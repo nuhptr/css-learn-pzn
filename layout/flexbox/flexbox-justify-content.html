@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox Justify Content</title>
+
+        <style>
+            /* Container using flexbox layout */
+            .container {
+                /* Enable flexbox layout */
+                display: flex;
+                /* Set container height */
+                height: 500px;
+                /* Set background color for visibility */
+                background-color: yellow;
+                /* Distribute space evenly between items with equal spacing around them */
+                justify-content: space-evenly;
+            }
+
+            /* Individual content box styling */
+            .content {
+                /* Set content background color */
+                background-color: aqua;
+                /* Add blue border with 2px thickness */
+                border: 2px solid blue;
+                /* Add inner spacing */
+                padding: 10px;
+                /* Add outer spacing between content boxes */
+                margin: 10px;
+                /* Set fixed width for content boxes */
+                width: 200px;
+                /* Allow height to adjust based on content */
+                height: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content">
+                <h1>Content 1</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 2</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 3</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio hic officia iure, quae
+                    eaque quo saepe, numquam quos quasi repellendus sed dignissimos doloremque. Nulla nostrum
+                    accusantium tempore excepturi voluptatum.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
