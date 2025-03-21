@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Position</title>
+
+        <style>
+            /* Base styles for all content boxes */
+            .content {
+                /* Basic box styling */
+                background-color: aqua;
+                width: 200px;
+                height: 200px;
+                /* inline-block allows elements to sit side by side while respecting width/height */
+                display: inline-block;
+            }
+
+            /* Styles for the second content box */
+            .content2 {
+                background-color: bisque;
+                /* position: fixed makes the element stay in place even when scrolling */
+                /* it removes the element from normal document flow */
+                position: fixed;
+                /* top and left properties position the element relative to the viewport */
+                top: 220px;
+                left: 220px;
+                /* z-index controls stacking order. Negative values place element behind others */
+                z-index: -1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content content1">
+            <h1>Content 1</h1>
+        </div>
+        <div class="content content2">
+            <h1>Content 2</h1>
+        </div>
+        <div class="content content3">
+            <h1>Content 3</h1>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ea laborum, reprehenderit, tempora, laudantium
+            quis ab officiis similique saepe impedit adipisci quae. Quis nisi delectus neque aut culpa accusantium
+            velit!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ea laborum, reprehenderit, tempora, laudantium
+            quis ab officiis similique saepe impedit adipisci quae. Quis nisi delectus neque aut culpa accusantium
+            velit!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ea laborum, reprehenderit, tempora, laudantium
+            quis ab officiis similique saepe impedit adipisci quae. Quis nisi delectus neque aut culpa accusantium
+            velit!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ea laborum, reprehenderit, tempora, laudantium
+            quis ab officiis similique saepe impedit adipisci quae. Quis nisi delectus neque aut culpa accusantium
+            velit!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ea laborum, reprehenderit, tempora, laudantium
+            quis ab officiis similique saepe impedit adipisci quae. Quis nisi delectus neque aut culpa accusantium
+            velit!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ea laborum, reprehenderit, tempora, laudantium
+            quis ab officiis similique saepe impedit adipisci quae. Quis nisi delectus neque aut culpa accusantium
+            velit!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ea laborum, reprehenderit, tempora, laudantium
+            quis ab officiis similique saepe impedit adipisci quae. Quis nisi delectus neque aut culpa accusantium
+            velit!
+        </p>
+    </body>
+</html>
