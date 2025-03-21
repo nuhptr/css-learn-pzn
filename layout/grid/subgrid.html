@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Subgrid</title>
+
+        <style>
+            /* Main container using CSS Grid */
+            /* Creates a 5x5 grid with 100px fixed size cells */
+            .container {
+                display: grid;
+                grid-template-columns: 100px 100px 100px 100px 100px; /* Creates 5 columns of 100px each */
+                grid-template-rows: 100px 100px 100px 100px 100px; /* Creates 5 rows of 100px each */
+                background-color: aqua;
+                width: 500px; /* Total width matches 5 columns of 100px */
+                height: 500px; /* Total height matches 5 rows of 100px */
+            }
+
+            /* Subgrid container that inherits grid lines from parent */
+            .content1 {
+                grid-column: 2 / 5; /* Spans from gridline 2 to 5 (3 columns wide) */
+                grid-row: 2 / 5; /* Spans from gridline 2 to 5 (3 rows high) */
+                background-color: bisque;
+                display: grid;
+                grid-template-columns: subgrid; /* Inherits column sizes from parent grid */
+                grid-template-rows: subgrid; /* Inherits row sizes from parent grid */
+            }
+
+            /* Individual grid items inside the subgrid */
+            .inner {
+                background-color: blueviolet;
+                margin: 5px; /* Creates spacing between grid items */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content1">
+                <div class="inner">1</div>
+                <div class="inner">2</div>
+                <div class="inner">3</div>
+                <div class="inner">4</div>
+                <div class="inner">5</div>
+                <div class="inner">6</div>
+                <div class="inner">7</div>
+                <div class="inner">8</div>
+                <div class="inner">9</div>
+            </div>
+        </div>
+    </body>
+</html>

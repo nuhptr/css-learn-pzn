@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid Template</title>
+
+        <style>
+            .container {
+                /* Enables CSS Grid layout */
+                display: grid;
+                /* Creates 3 columns:
+                   - First column: 200px wide (named cline1-cline2)
+                   - Middle column: auto width (named cline2-cline3)
+                   - Last column: 200px wide (named cline3-cline4) */
+                grid-template-columns: [cline1] 200px [cline2] auto [cline3] 200px [cline4];
+                /* Creates 2 rows:
+                   - First row: 500px height (named rline1-rline2)
+                   - Second row: auto height (named rline2-rline3) */
+                grid-template-rows: [rline1] 500px [rline2] auto [rline3];
+            }
+            .content {
+                background-color: aqua;
+                border: 2px solid blue;
+                padding: 10px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content">
+                <h1>Content 1</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore unde nisi et repellendus fugiat,
+                    distinctio enim sunt saepe perspiciatis eum ut ipsam earum vitae alias fuga consequatur dolores
+                    minus.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 2</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore unde nisi et repellendus fugiat,
+                    distinctio enim sunt saepe perspiciatis eum ut ipsam earum vitae alias fuga consequatur dolores
+                    minus.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 3</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore unde nisi et repellendus fugiat,
+                    distinctio enim sunt saepe perspiciatis eum ut ipsam earum vitae alias fuga consequatur dolores
+                    minus.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 4</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore unde nisi et repellendus fugiat,
+                    distinctio enim sunt saepe perspiciatis eum ut ipsam earum vitae alias fuga consequatur dolores
+                    minus.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Content 5</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore unde nisi et repellendus fugiat,
+                    distinctio enim sunt saepe perspiciatis eum ut ipsam earum vitae alias fuga consequatur dolores
+                    minus.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
