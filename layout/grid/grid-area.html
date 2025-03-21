@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid Area</title>
+
+        <style>
+            .container {
+                /* Enable grid layout */
+                display: grid;
+                /* Define 3 columns: left sidebar (100px), main content (auto), right sidebar (100px) */
+                grid-template-columns: 100px auto 100px;
+                /* Define 3 rows: header (50px), main content (auto), footer (100px) */
+                grid-template-rows: 50px auto 100px;
+                /* Define named grid areas:
+                   - header spans all 3 columns in first row
+                   - content takes middle column in second row (dots represent empty cells)
+                   - footer spans all 3 columns in last row */
+                grid-template-areas:
+                    "header header header"
+                    ". content ."
+                    "footer footer footer";
+            }
+            .header {
+                background-color: aqua;
+                /* Place element in the "header" named grid area */
+                grid-area: header;
+            }
+            .footer {
+                background-color: aqua;
+                /* Place element in the "footer" named grid area */
+                grid-area: footer;
+            }
+            .content {
+                background-color: bisque;
+                /* Place element in the "content" named grid area */
+                grid-area: content;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">Selamat Datang di web Programmer Zaman Now</div>
+            <div class="content">
+                <h1>Programmer Zaman Now</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias adipisci fugiat dignissimos
+                    consectetur, tempora est numquam libero explicabo temporibus, natus voluptates. Necessitatibus
+                    nostrum dolores ab quaerat eos dicta inventore.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet
+                    odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos
+                    temporibus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet
+                    odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos
+                    temporibus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet
+                    odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos
+                    temporibus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet
+                    odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos
+                    temporibus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet
+                    odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos
+                    temporibus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet
+                    odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos
+                    temporibus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet
+                    odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos
+                    temporibus.
+                </p>
+            </div>
+            <div class="footer">Develop with Love by Programmer Zaman Now</div>
+        </div>
+    </body>
+</html>

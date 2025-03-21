@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid Justify Content</title>
+
+        <style>
+            .container {
+                /* Container for the grid layout */
+                background-color: aqua;
+                /* Sets fixed height for the container */
+                height: 500px;
+                /* Enables grid layout */
+                display: grid;
+                /* Creates 3 columns, each 100px wide */
+                grid-template-columns: 100px 100px 100px;
+                /* Creates 3 rows, each 100px tall */
+                grid-template-rows: 100px 100px 100px;
+                /* Distributes extra space evenly between grid rows */
+                align-content: space-evenly;
+
+                /* Distributes extra space evenly between grid columns
+                1. space-evenly: Distributes extra space evenly between grid columns
+                2. space-around: Distributes extra space evenly around grid columns
+                3. space-between: Distributes extra space evenly between grid columns, with no space at the edges
+                */
+                justify-content: space-evenly;
+            }
+
+            .content {
+                /* Styles for individual grid items */
+                background-color: bisque;
+                /* Adds border around each item */
+                border: 1px solid black;
+                /* Adds internal spacing */
+                padding: 10px;
+                /* Centers text inside grid items */
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content">1</div>
+            <div class="content">2</div>
+            <div class="content">3</div>
+            <div class="content">4</div>
+            <div class="content">5</div>
+            <div class="content">6</div>
+            <div class="content">7</div>
+            <div class="content">8</div>
+            <div class="content">9</div>
+        </div>
+    </body>
+</html>

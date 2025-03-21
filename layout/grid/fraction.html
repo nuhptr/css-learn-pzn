@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fraction</title>
+        <style>
+            /* Container using CSS Grid for layout */
+            .container {
+                display: grid; /* Enables CSS Grid layout */
+                grid-template-columns: 200px 1fr 2fr 2fr 1fr; /* Define 5 columns:
+                    - First column: fixed 200px width
+                    - Second column: 1 fraction of remaining space
+                    - Third & Fourth columns: 2 fractions each of remaining space
+                    - Fifth column: 1 fraction of remaining space
+                */
+                column-gap: 10px; /* Adds 10px spacing between grid columns */
+            }
+
+            /* Styling for the sidebar element */
+            .sidebar {
+                background-color: pink; /* Sets background color to pink */
+            }
+
+            /* Styling for the content elements */
+            .content {
+                background-color: aqua; /* Sets background color to aqua */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <h1>Sidebar</h1>
+            </div>
+            <div class="content">Content</div>
+            <div class="content">Content</div>
+            <div class="content">Content</div>
+            <div class="content">Content</div>
+        </div>
+    </body>
+</html>

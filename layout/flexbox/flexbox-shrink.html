@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex Shrink</title>
+
+        <style>
+            /* Container uses flexbox for layout */
+            .container {
+                display: flex;
+            }
+
+            /* Common styles for flex items */
+            .content {
+                background-color: aqua;
+                border: 1px solid blue;
+                padding: 5px;
+                margin: 5px;
+            }
+
+            /* First item shrinks (menyusut) at normal rate (1x) when container is too small */
+            .content1 {
+                flex-shrink: 1;
+            }
+
+            /* Middle item shrinks (menyusut) twice as fast (2x) compared to others */
+            .content2 {
+                flex-shrink: 2;
+            }
+
+            /* Last item shrinks (menyusut) at normal rate (1x) when container is too small */
+            .content3 {
+                flex-shrink: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content content1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex magnam molestias ducimus
+                temporibus, vel corrupti nesciunt blanditiis neque libero debitis maxime officiis repudiandae
+                voluptates? Earum quaerat iure illum esse?
+            </div>
+            <div class="content content2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex magnam molestias ducimus
+                temporibus, vel corrupti nesciunt blanditiis neque libero debitis maxime officiis repudiandae
+                voluptates? Earum quaerat iure illum esse?
+            </div>
+            <div class="content content3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex magnam molestias ducimus
+                temporibus, vel corrupti nesciunt blanditiis neque libero debitis maxime officiis repudiandae
+                voluptates? Earum quaerat iure illum esse?
+            </div>
+        </div>
+    </body>
+</html>
