@@ -1,0 +1,28 @@
+/* This media query applies to all media types (screen, print, speech, etc.)
+   Contains base styles that will be applied regardless of screen size */
+@media all {
+    .container {
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .content {
+        background-color: aqua;
+    }
+}
+
+/* This media query targets screens with width between 10px and 500px (mobile devices)
+   Creates a 2-column grid layout for smaller screens */
+@media screen and (min-width: 10px) and (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* This media query targets screens wider than 500px (tablets and desktops)
+   Creates a 4-column grid layout for larger screens */
+@media screen and (min-width: 500px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
